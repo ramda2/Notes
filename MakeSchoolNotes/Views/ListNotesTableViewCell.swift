@@ -8,7 +8,10 @@
 
 import UIKit
 
+//custom class for notes cell
 class ListNotesTableViewCell: UITableViewCell {
+    
+    //connection to labels
 
     @IBOutlet weak var noteTitleLabel: UILabel!
     @IBOutlet weak var noteModificationTimeLabel: UILabel!

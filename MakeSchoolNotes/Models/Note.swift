@@ -10,6 +10,7 @@
 import Foundation
 import RealmSwift
 
+// default note
 class Note: Object {
     dynamic var title = ""
     dynamic var content = ""
