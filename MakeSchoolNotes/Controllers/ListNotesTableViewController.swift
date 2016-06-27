@@ -17,11 +17,7 @@ var notes: Results<Note>!
 class ListNotesTableViewController: UITableViewController {
     
     //array the holds our notes
-    var notes: Results<Note>! {
-        didSet {
-            tableView.reloadData()
-        }
-    }
+    var notes: Results<Note>! { didSet { tableView.reloadData() } }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,9 +48,7 @@ class ListNotesTableViewController: UITableViewController {
         
         
         //if rows are even, color coordinate between rows
-        if row % 2 == 0 {
-            cell.backgroundColor = UIColor.clearColor()
-        }
+        if row % 2 == 0 { cell.backgroundColor = UIColor.clearColor() }
         return cell
     }
     
@@ -74,9 +68,7 @@ class ListNotesTableViewController: UITableViewController {
                 // 4
                 displayNoteViewController.note = note
                 
-            } else if identifier == "addNote" {
-                print("+ button tapped")
-            }
+            } else if identifier == "addNote" { print("+ button tapped") }
         }
     }
     
