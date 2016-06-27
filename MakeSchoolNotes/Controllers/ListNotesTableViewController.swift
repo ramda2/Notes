@@ -45,8 +45,8 @@ class ListNotesTableViewController: UITableViewController {
         let note = notes[row]
         
 
-        //cell.noteTitleLabel.text = note.title
-        cell.noteTitleLabel.text = note.content //set preview within the title section
+        cell.noteTitleLabel.text = note.title
+        cell.notePreview.text = note.content //set preview within the title section
 
         cell.noteModificationTimeLabel.text = note.modificationTime.convertToString()  //timestamp
         
@@ -60,6 +60,7 @@ class ListNotesTableViewController: UITableViewController {
     
     //activated when a segue is trigggered
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // check if not null, store the identifier's indentifer
         if let identifier = segue.identifier {
             if identifier == "displayNote" {
                 print("Table view cell tapped")

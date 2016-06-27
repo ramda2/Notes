@@ -12,8 +12,8 @@ import UIKit
 class ListNotesTableViewCell: UITableViewCell {
     
     //connection to labels
-
     @IBOutlet weak var noteTitleLabel: UILabel!
     @IBOutlet weak var noteModificationTimeLabel: UILabel!
+    @IBOutlet weak var notePreview: UITextView!
 
 }
